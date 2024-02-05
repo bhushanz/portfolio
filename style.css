@@ -1,0 +1,659 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    background-color: rgb(0, 1, 28);
+    color: white;
+    height: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+.navbar{
+    display: flex;
+    height: 70px;
+    padding: 0px 20px;
+    padding-right:40px;
+    align-items: center;
+    justify-content: space-between;
+}
+.side-list{
+    display: none;
+}
+.menu{
+    display:none;
+}
+.logo h2{
+    font-size:2.7rem;
+    font-family: 'Bebas Neue', sans-serif;
+}
+span{
+    color:#6a6afa;
+}
+.navbar ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+}
+.nav-list ul li{
+    padding: 0px 15px;
+    margin: 0px 16px;
+    font-size: 1.3rem;
+    font-family: 'Bebas Neue', sans-serif;
+    position: relative;
+}
+  a{
+    text-decoration: none;
+    color: white;
+ }
+ a:hover{
+    color:#6a6afa;
+ }
+ul li a:after{
+    content:"";
+    height: 4px;
+    width: 0;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: 0;
+    bottom: -3px; 
+    transition: linear 0.3s; 
+}
+ul li a:hover::after {
+    width: 100%;   
+}
+
+.btn{
+    height: 40px;
+    width: 150px;
+    padding: 0px 6px; 
+   
+}
+button{
+    height: 97%;
+    width: 100%;
+    border: none;
+    border-radius: 8px; 
+    font-size: 1.1rem;
+    font-family: 'Bebas Neue', sans-serif;
+    color: #6a6afa;
+    border: 2.2px solid #9000ff;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    box-shadow: 1px 1px 0px rgb(255, 255, 255);
+}
+.btndld:hover{
+    color: white;
+    border: 2.2px solid #9000ff;
+    background-color: #6a6afa; 
+}
+.btndld:active{
+   border: none;
+   transform: translateY(5px); 
+}
+/* home container start */
+.home-container {
+    width: 100%;
+    height: 520px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    background-image: url('img/backgrnd.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.overlay{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.659);
+    filter: blur(5px);
+}
+.home-text{
+    z-index: 1;
+    margin-left: 240px;
+    height:240px;
+    width: auto;
+    line-height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.home-text h4{
+    color: #b9b9fc;
+}
+.home-text h1{
+    margin-left: 6px;
+    font-size: 3.5rem;
+}
+.home-text h3{
+    margin-left: 13px;
+    color: #b9b9fc;
+}
+.home-text >.contact-me{
+    height:48px ;
+    width: 190px;
+    font-size: 1.4rem;
+    margin-top: 20px;
+    margin-left: 18px;
+    border: 2.3px solid rgb(117, 80, 219);
+}
+
+.home-img {
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 450px;
+    width: 400px;
+}
+.home-img img{
+    height: 75%;
+    width: 70%;
+}
+
+/* about coder starts from here */
+
+.about-main{
+    margin-top: 60px;
+    height:100vh;
+    width: 100%;
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.aboutin{
+    height:90%;
+    width: 60%;
+    display: flex; 
+    flex-direction: row;
+   
+}
+.about-img{
+    height: 340px;
+    width: 400px; 
+    margin-top: 70px;
+    border: 3px solid #a6a6f8;
+    box-shadow:0px 0px  8px 3px #6a6a6a;
+    border-radius:60px ;
+    
+}
+.about-img > img{
+    height:100%;
+    width: 100%;
+    border-radius:60px ;
+    object-fit: cover;
+}
+.about-text{
+    margin-top:80px;
+    margin-left:80px;
+    height:400px;
+    width: 880px;
+
+}
+.about-text > h3{
+    font-size:30px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.about-text > p{
+    font-size:20px;
+    margin-top: 30px;
+    font-family: 'Bebas Neue', sans-serif;
+    color: rgb(225, 220, 220);
+    font-weight: 500;
+}
+
+.info{
+     height: 210px;
+     width: 460px;
+     margin-top: 10px;
+     display: flex;
+     border: 4px solid rgb(114, 142, 195);
+     border-radius: 10px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.info1 , 
+.info2{
+    margin-left: 20px;
+     width:50%;
+     text-align: justify;
+     font-family: 'Bebas Neue', sans-serif;
+     font-size: 18px;
+     line-height: 3cap;
+}
+
+/* work page start from here */
+
+.workmain{ 
+   height: 100vh;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+}
+.workmain >h3{
+    position: absolute;
+    top: 0px;
+    border-bottom: 4px solid rgb(253, 248, 248);
+    color: white;   
+    font-size:2.5rem;
+    font-family: 'Bebas Neue', sans-serif;
+}
+.inr-work{
+    position: absolute;
+    z-index: 2;
+    height: 80%;
+    width: 90%;
+    border: 4px solid #b9b9fc ;
+    border-radius: 15px;
+    display: grid;
+    place-items: center;
+}
+.inr-work > video{
+    position: absolute;
+    z-index: -2 ;
+    height:100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.overlay-work{
+    height:100%;
+    width: 100%;
+    z-index: -1 ;
+    background-color:rgba(146, 121, 121, 0.357);
+}
+.work-iteam{
+    height: 75%;
+    width: 80%;
+    position: absolute;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:repeat(2,1fr);
+}
+.iteam{
+    background-color: black ;
+    padding: 10px;
+    border-radius:10px ;
+}
+ .incon{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+ }
+ .incon >i{
+    margin-bottom: 10px;
+     font-size: 50px;
+     color: #b9b9fc; 
+ }
+ .incon >h4{
+    font-size:18px;
+    font-family: 'Bebas Neue', sans-serif; 
+ }
+ .worktext{
+    text-align:center;
+    font-family:'Bebas Neue', sans-serif;  
+    font-weight: 500px;
+    font-family: 15px;
+    margin-top: 10px;
+    color: #ebf1f6;
+ }
+ .footer, #Contact{
+    height: 380px;
+    width: 100vw;
+    padding:40px 20px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+.footnav{
+    height: 70px;
+    min-width: 100vh;
+    background-color: #edf2ff5d;
+    border-radius: 10px;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    font-size:19px;
+    color: rgb(14, 35, 94);
+    padding: 0px 15px; 
+}
+.footin2{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 28px;
+    color: #b9b9fc;
+}
+.footmain{
+    height: 70%;
+    min-width: 10vh;
+    display: flex;
+    justify-content:space-evenly;
+    border-radius: 5px solid  #b9b9fc ;
+}
+.foot-main1{
+    height: 70%;
+    width:170px;
+    text-align: left;
+}
+.foot-main2{
+    height: 75%;
+    width:270px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.foot-main1 >h3{
+    border-bottom:3px solid #b9b9fc;
+    text-align: left;
+    font-size:22px;
+    
+}
+.foot-main2 >h3{
+    border-bottom:3px solid #b9b9fc;
+    text-align: left;
+}
+.foot-main1 ul li{
+    padding-left:10px;
+    padding-top: 14px;
+    list-style: none;
+    font-size: 17px;
+}
+.foot-main2 p{
+    margin-top:20px;
+}
+h5{
+    font-size:18px;
+    padding: 10px 0px;
+}
+.emailbar{
+    height: 25px;
+    width:90%;
+    padding: 0px 10px;
+}
+.textbar{
+ height: 67px;
+}
+.btnsub{
+    height: 40px;
+    width:40%;
+    margin-top: 10px;   
+}
+
+
+/* mobile responsive */
+
+@media (max-width: 480px) {
+    .main{
+        position: relative;
+    }
+    .navbar ul{
+        display: none;
+    }
+    .nav-list{
+        display: none;  
+    }
+    .navbar{
+        display:flex;
+        justify-content: space-between;
+    }
+
+    .home-container{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+    }
+    .home-text{
+        position: absolute;
+        height:60%;
+        width:90%;
+         margin: 0px 20px;
+         margin-left: 60px;   
+    }
+    .home-img {
+        display: none;
+    }
+    .home-img > img {
+        display: none;
+    }
+    .home-text h4{
+        color: #b9b9fc;
+    }
+    .home-text h1{
+        font-size: 5vh;
+    }
+    .home-text h3{
+        margin-left: 9px;
+        color: #b9b9fc;
+    }
+    .menu{
+        height: 45%; 
+        width: 12%;
+        border: 2px solid rgb(255, 255, 255);
+        border-radius: 10px;
+        display: block;
+
+    }
+    .menu >i{
+         font-size: 25px;
+         display: flex;
+         justify-content: center;
+    }
+    .side-list{
+        display: none;
+        flex-direction: column;
+        height: 100vh;
+        width: 200px;
+        z-index: 99;
+        position: absolute;
+        right: 0px;
+        top:-70px;
+        background-color: rgb(13, 3, 52);
+    }
+    .side-list ul{
+        margin-top:40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+     
+    }
+    .side-list ul li{
+        display:flex;
+       justify-content: center;
+        flex-direction: column;
+        margin-top: 25px;
+        padding-left: 30px;
+        width: 100%;
+        height: 39px;
+         font-variant: small-caps;
+    }  
+    .side-list ul li:hover{
+        background-color: rgba(128, 128, 128, 0.156);
+    }
+    .side-close{
+        height: 40px;
+        width: 40px;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        right: 15px;
+        top: 5px;
+    }
+    .side-close i {
+        float:right;
+        font-size: 2rem;
+        
+    }
+    
+    /* responsive about */
+
+    .about-main{
+        display: block; 
+        margin-top: 20px; 
+        height: auto;
+    }
+    .aboutin{
+        display: block;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height:100vh;
+        width: 100%;
+    }
+    .about-img  {
+        margin: auto;
+        height:25%;
+        width: 30%;
+    }
+    .about-img > img {
+        height: 100%;
+        width: 100%;
+    }
+    hr{
+        width:65%;
+       margin: auto;
+       margin-bottom: 0;
+    }
+    .about-text{
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .about-text > p{
+        margin-bottom: 8px;
+        font-size: 0.9rem;
+        margin-top: 10px;
+    }
+    .info{
+        height: 48%;
+        width: 85%;
+        margin: auto;
+        margin-top: 10px;
+        border: none;
+        /* border: 2px solid  rgb(0, 170, 255); */
+        display: flex;
+        flex-direction: column;
+        background-color: #4e505e49;
+
+    }
+    .info1, .info2{
+        height:50%;
+        width: 100%;
+       font-size: 0.9rem;
+       margin: auto;
+       text-align: center;
+        }
+
+    /* About MEnu COdiing */
+     /* .info1,.info2{
+         font-size:1rem;
+         width: 90%;
+       
+
+     } */
+     .workmain{
+         display:flex;
+         flex-direction:column;
+         height: 100vh;
+         position: relative;
+     }
+     .work-iteam{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 5px;
+        min-height: 100%;
+        width: 100%;
+
+     }
+     .inr-work{
+       height:auto;
+       width: 100%;
+       margin: 0px;
+       padding: 0px;
+       position: absolute;
+       top: 60px;
+     }
+     .iteam{
+        height: auto;
+        width: 100% ;
+        text-align: center;
+         margin: 8px  0px;
+
+     }
+     .incon >i{
+        font-size: 35px;
+     }
+     .incon >h4{
+        font-size:16px;
+     }
+     .worktext p{
+        font-size: 12px ;
+
+     }
+    
+     .footmain , #Contact{
+         position: relative;
+         top: 70px;
+          height: auto;
+        display: block;
+        padding: 0px ;
+       
+
+     }
+   .foot-main1 ,.foot-main2{
+        height: auto;
+        width: 95%;
+      margin: auto;
+      margin-top: 10px;  
+   }
+   .foot-main1 > h3{
+       font-size: 1.4rem;
+       display: inline-block;
+       
+   }
+   .foot-main1 > ul li{
+    font-size: 1rem;
+   }
+   .foot-main2  h3{
+    font-size: 1.2rem;
+   }
+   .foot-main2 p{
+    font-size: 0.9rem;
+   }
+   .emailbar,.textbar{
+    width: 70%;
+    font: 14px;
+    border-radius: 5px;
+    border: none;
+   }
+  
+   .btnsub{
+    width: 30%;
+    height: 35px;
+ font-size: 1.2rem;
+   }
+
+}
+
+ 
